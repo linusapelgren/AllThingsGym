@@ -4,6 +4,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: whitesmoke;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
   
 /* Styling for the header */
@@ -12,18 +14,68 @@ header {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column-reverse;
     align-items: center;
     margin-bottom: 20px;
     box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    position: relative;
 }
 
+.menubigscreen{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .menubigscreen {
+        display: none;
+    }
+}
+.menubigscreen a {
+    background-color: transparent;
+    padding: 16px;
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+  
+.menubigscreen a:hover {
+    transform: scale(1.2);
+}
+
+.menubigscreen a:nth-child(1):hover {
+    transform: scale(1.2);
+}
+
+.menubigscreen a:nth-child(2):hover {
+    transform: scale(1.2);
+}
+
+.menubigscreen a:nth-child(3):hover {
+    transform: scale(1.2);
+}
+
+.menusmallscreen {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menusmallscreen {
+        display: block;
+    }
+}
 /*Styling for the dropdown menu */
 .menubtn {
     background-color: transparent;
     padding: 16px;
     color: orangered;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -33,9 +85,11 @@ header {
     width: 2rem;
     border: none;
     z-index: 100;
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 35%;
     transition: transform 0.3s ease-in-out;
-  }
+}
   /*Hover effect on dropdown menu */
 .menubtn:hover{
     transform: scale(1.2);
@@ -86,12 +140,10 @@ header {
     
 /* Styling for home button */
 .home {
-    margin-left: 0px;
     background-color: transparent;
     color: orangered;
     padding: 16px;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 20px;
     cursor: pointer;
     border: none;
     transition: transform 0.3s ease-in-out;
@@ -112,16 +164,15 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-y: scroll;
-    height: 100vh;
+    height: 80vh; 
 }
 
 .backgroundimg{
-    height: auto;
-    width: 200%;
     position: fixed;
     top: 0;
     z-index: -1;
+    width: auto;
+    height: 100vh;
 }
 .websitetitle{
     background-color: #333;
@@ -132,7 +183,7 @@ header {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    top: -35%;
+    top: -30%;
 }
 /* Styling for h1 */
 .websitetitle h1{
@@ -144,7 +195,7 @@ header {
 }
 
 .websiteinfo{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: black;
     margin: 40px;
     color: white;
@@ -161,25 +212,52 @@ header {
     top: -25%;
 }
 
+/* Styling for the main menu */
+.mainmenu {
+    color: black;
+    text-align: center;
+    background: #333; /* Set the background color for all elements */
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 70%;
+    top: -20%;
+    
+}
+.mainmenu a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+}
+
+.mainmenu a:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Styling for the footer */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 25px;
     text-align: left;
     width: 100%;
-    margin-top: 20px;
     box-shadow: 0px -10px 15px -5px rgba(0, 0, 0, 0.5);
   }
   
-  /* Styling for the footer */
-  footer .footerlinks {
+/* Styling for the footer */
+footer .footerlinks {
     display: grid;
-  }
+}
   /* Styling for the footer */
-  .footerlinks a {
+.footerlinks a {
     color: lightgray;
     text-decoration: none;
-  }
+}
 
 th{
     color: orangered;

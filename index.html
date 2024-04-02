@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>All Things Gym</title>
 </head>
 <body>
     <header id="header">
-        <div class="menu">
+        <nav>
+            <div class="menubigscreen">
+                <a href="./index.html">Home</a>
+                <a href="./exercises.html">Exercises</a>
+                <a href="./trainingsplits.html">Training Splits</a>
+                <a href="./nutrition.html">Nutrition</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="menusmallscreen">
         <button class="menubtn"><i class="fas fa-bars fa-2x"></i>
         </button>
         <div id="sidenav" class="sidenav">
@@ -28,45 +37,50 @@
         </div>
         </div>
         <div class="home-wrapper">
-        <a href="index.html">
-            <button class="home"><i class="fas fa-dumbbell fa-2x"></i></button>
-        </a>
+            <a href="index.html">
+                <button class="home"><i class="fas fa-dumbbell fa-2x"></i></button>
+            </a>
         </div>
     </header>
     <div class="contentpage">
         <img src="https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80" alt="Picture of man working out" class="backgroundimg">
-            <div class="websitetitle">
-                <h1>All Things Gym!</h1>
-            </div>
-            <div class="websitecontent">
-                <p class="websiteinfo">Welcome to All Things Gym! <br>We are here to help you reach your fitness goals!</p>
-            </div>   
+        <div class="websitetitle">
+            <h1>All Things Gym!</h1>
+        </div>
+        <div class="websitecontent">
+            <p class="websiteinfo">Welcome to All Things Gym! <br>We are here to help you reach your fitness goals!</p>
+        </div>   
+        <div class="mainmenu">
+            <a href="./exercises.html">Exercises</a>
+            <a href="./trainingsplits.html">Training Splits</a>
+            <a href="./nutrition.html">Nutrition</a>
+            <a href="./contact.html">Contact</a>  
+        </div>
     </div>
     <footer>
         <div class="footerlinks">
-          <table>
-            <tr>
-              <th>Exercises:</th>
-              <th>Other:</th>
-            </tr>
-            <tr>
-              <td><a href="./chest.html">Chest exercises</a></td>
-              <td><a href="./trainingstyles.html">Training Splits</a></td>
-            </tr>
-            <tr>
-              <td><a href="./back.html">Back exercises</a></td>
-              <td><a href="./nutrition.html">Nutrition</a></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><a href="./legs.html">Leg exercises</a></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><a href="./arms.html">Arm exercises</a></td>
-            </tr>
-          </table>
-          
+            <table>
+                <tr>
+                  <th>Quick Links:</th>
+                  <th>Socials:</th>
+                </tr>
+                <tr>
+                  <td><a href="./exercises.html">Exercises</a></td>
+                  <td><a href="https://www.instagram.com">Instagram</a></td>
+                </tr>
+                <tr>
+                  <td><a href="./trainingsplits.html">Training Splits</a></td>
+                  <td><a href="https://www.facebook.com">Facebook</a></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><a href="./nutrition.html">Nutrition</a></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><a href="./contact.html">Contact</a></td>
+                </tr>
+              </table>
         </div>
       </footer>
   <script src="./script.js"></script>
