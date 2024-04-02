@@ -9,31 +9,127 @@
 </head>
 <body>
   <header id="header">
-    <div class="menu">
-      <button class="menubtn"><i class="fas fa-bars fa-2x"></i>
-      </button>
-      <div id="sidenav" class="sidenav">
+    <nav>
+        <div class="menubigscreen">
+            <a href="./index.html">Home</a>
+            <a href="./exercises.html">Exercises</a>
+            <a href="./trainingsplits.html">Training Splits</a>
+            <a href="./nutrition.html">Nutrition</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="menusmallscreen">
+    <button class="menubtn"><i class="fas fa-bars fa-2x"></i>
+    </button>
+    <div id="sidenav" class="sidenav">
         <div class="exersizes">
-          <a href=./exercises.html>Exercises</a>
+        <a href=./exercises.html>Exercises</a>
         </div>
         <div class="trainingstyles">
-          <a href="./trainingsplits.html">Training Splits</a>
+        <a href="./trainingsplits.html">Training Splits</a>
         </div>
         <div class="nutrition">
-          <a href="nutrition.html">Nutrition</a>
+        <a href="nutrition.html">Nutrition</a>
         </div>
         <div class="contact">
             <a href="./contact.html">Contact</a>
         </div>
-      </div>
+    </div>
     </div>
     <div class="home-wrapper">
-      <a href="index.html">
-        <button class="home"><i class="fas fa-dumbbell fa-2x"></i></button>
-      </a>
+        <a href="index.html">
+            <button class="home"><i class="fas fa-dumbbell fa-2x"></i></button>
+        </a>
     </div>
   </header>
-  <div class="contentpage"></div>
+
+  <div class="scrollablecontent">
+    <h1 id="exercises">Exercises</h1>
+    <div class="exercisemenu">
+      <ul>
+        <div>
+          <li>Chest exercises:</li>
+          <iframe src="https://www.youtube.com/embed/fGm-ef-4PVk" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <li>Back exercises:</li>
+          <iframe src="https://www.youtube.com/embed/jLvqKgW-_G8" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <li>Leg exercises:</li>
+          <iframe src="https://www.youtube.com/embed/H6mRkx1x77k" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <li>Shoulder exercises:</li>
+          <iframe src="https://www.youtube.com/embed/21lYP86dHW4?start=193" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <li>Arm exercises:</li>
+            <iframe id="videoPlayer" src="https://www.youtube.com/embed/MfMxT_jXcPE" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+          <div id="buttonContainer">
+            <a id="prevButton"><i class="fas fa-arrow-left fa-2x"></i></a>
+            <a id="nextButton"><i class="fas fa-arrow-right fa-2x"></i></a>
+          </div>
+        </div>
+        <div>
+          <li>Core exercises:</li>
+          <iframe src="https://www.youtube.com/embed/Tn-XvYG9x7w?start=81&end=244" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </ul>
+
+    </div>  
+  </div>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footerlinks">
+          <table>
+              <tr>
+                <th>Quick Links:</th>
+                <th>Socials:</th>
+              </tr>
+              <tr>
+                <td><a href="./exercises.html">Exercises</a></td>
+                <td><a href="https://www.instagram.com">Instagram</a></td>
+              </tr>
+              <tr>
+                <td><a href="./trainingsplits.html">Training Splits</a></td>
+                <td><a href="https://www.facebook.com">Facebook</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./nutrition.html">Nutrition</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./contact.html">Contact</a></td>
+              </tr>
+            </table>
+      </div>
+    </footer>
+  </div>
+  <script>
+    var videos = [
+      { url: 'https://www.youtube.com/embed/MfMxT_jXcPE'},
+      { url: 'https://www.youtube.com/embed/i1YgFZB6alI'},
+      { url: 'https://www.youtube.com/embed/94DXwlcX8Po'}
+    ];
+    var currentVideoIndex = 0;
+  
+    document.getElementById('nextButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+      document.getElementById('videoPlayer').src = videos[currentVideoIndex].url;
+      document.getElementById('videoTitle').textContent = videos[currentVideoIndex].title;
+    });
+  
+    document.getElementById('prevButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+      document.getElementById('videoPlayer').src = videos[currentVideoIndex].url;
+      document.getElementById('videoTitle').textContent = videos[currentVideoIndex].title;
+    });
+  </script>
   <script src="./script.js"></script>
 </body>
 </html>
