@@ -37,10 +37,10 @@ header {
     transition: transform 0.3s ease-in-out;
   }
   /*Hover effect on dropdown menu */
-  .menubtn:hover{
+.menubtn:hover{
     transform: scale(1.2);
-  }
-  
+}
+
 /*Styling for the dropdown menu */
 .sidenav {
     height: 100%;
@@ -106,18 +106,57 @@ header {
     margin: auto;
 }
 
-.content {
+/* Styling for the content */
+.contentpage {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
     overflow-y: scroll;
+    height: 100vh;
 }
 
-h1 {
-    margin-top: 50px;
+.backgroundimg{
+    height: auto;
+    width: 200%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.websitetitle{
+    background-color: #333;
+    margin-top: 0px;
+    width: 90%;
+    border-radius: 5%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -35%;
+}
+/* Styling for h1 */
+.websitetitle h1{
     font-size: 2.5rem;
-    color: orangered;
-    text-decoration: underline;
+    color: white;
+    background: invisible;
+    font-family: barlow, sans-serif;
+    font-weight: 500%;
+}
+
+.websiteinfo{
+    font-size: 2.5rem;
+    color: black;
+    margin: 40px;
+    color: white;
+    text-align: center;
+    background: invisible;
+}
+
+.websitecontent{
+    background-color: #333;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -25%;
 }
