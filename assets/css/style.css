@@ -368,3 +368,18 @@ h2{
     margin-right: 50px;
     text-align: left;
 }
+
+.YTLink{
+    text-decoration: none;
+    color: orangered;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#Nutrition{
+    color: orangered;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
