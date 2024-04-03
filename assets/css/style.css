@@ -25,17 +25,21 @@ header {
     position: relative;
 }
 
+/* Styling menu for big screen */
 .menubigscreen{
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
+/* Hiding big screen menu when screen small */
 @media (max-width: 768px) {
     .menubigscreen {
         display: none;
     }
 }
+
+/*Styling menu for big screen */
 .menubigscreen a {
     background-color: transparent;
     padding: 16px;
@@ -47,33 +51,38 @@ header {
     transition: transform 0.3s ease-in-out;
     text-decoration: none;
 }
-  
+
+/*Styling menu for big screen */
 .menubigscreen a:hover {
     transform: scale(1.2);
 }
 
+/*Styling menu child 1 */
 .menubigscreen a:nth-child(1):hover {
     transform: scale(1.2);
 }
 
+/*Styling menu child 2 */
 .menubigscreen a:nth-child(2):hover {
     transform: scale(1.2);
 }
 
+/*Styling menu child 3 */
 .menubigscreen a:nth-child(3):hover {
     transform: scale(1.2);
 }
 
+/*Hiding menu for small screen */
 .menusmallscreen {
     display: none;
 }
-
+/*Showing menu for small screen */
 @media (max-width: 768px) {
     .menusmallscreen {
         display: block;
     }
 }
-/*Styling for the dropdown menu */
+/*Styling for the dropdown menu button */
 .menubtn {
     background-color: transparent;
     padding: 16px;
@@ -93,12 +102,12 @@ header {
     top: 35%;
     transition: transform 0.3s ease-in-out;
 }
-  /*Hover effect on dropdown menu */
+/*Hover effect on dropdown menu */
 .menubtn:hover{
     transform: scale(1.2);
 }
 
-/*Styling for the dropdown menu */
+/*Styling for the sidenav*/
 .sidenav {
     height: 100%;
     width: 0;
@@ -112,7 +121,7 @@ header {
     padding-top: 80px;
     margin-top: 0;
 }
-/*Styling for the dropdown menu */
+/*Styling for the sidenav links */
 .sidenav a{
     display: block;
     padding: 8px 8px 8px 32px;
@@ -121,25 +130,7 @@ header {
     color: black;
     transition: 0.3s;
     border: solid 1px lightgray;
-}
-/*Styling for the subnav*/
-.dropdownbtn {
-    position: relative;
-    padding-right: 20px; 
-}
-  
-/*Styiling for the subnav arrow */
-.dropdownbtn::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-width: 8px;
-    border-style: solid;
-    border-color: gray transparent transparent;
-}
-  
+}  
     
 /* Styling for home button */
 .home {
@@ -152,7 +143,7 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Styling for the Home button */
+/* Hover effect on the Home button */
 .home:hover{
     transform: scale(1.2);
 }
@@ -169,6 +160,7 @@ header {
     height: 80vh;
 }
 
+/* Styling for the background image */
 .backgroundimg{
     position: fixed;
     top: 0;
@@ -176,6 +168,8 @@ header {
     width: 100%;
     height: 100vh;
 }
+
+/* Styling for the website title */
 .websitetitle{
     background-color: #333;
     margin-top: 40px;
@@ -186,6 +180,7 @@ header {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 /* Styling for h1 */
 .websitetitle h1{
     font-size: 2.5rem;
@@ -195,6 +190,7 @@ header {
     font-weight: 500%;
 }
 
+/* Styling for websiteinfo */
 .websiteinfo{
     font-size: 1.8rem;
     color: black;
@@ -204,6 +200,7 @@ header {
     background: invisible;
 }
 
+/* Styling for the websitecontent */
 .websitecontent{
     background-color: #333;
     margin: 10px;
@@ -215,12 +212,14 @@ header {
 .mainmenu {
     color: black;
     text-align: center;
-    background: #333; /* Set the background color for all elements */
+    background: #333; 
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
     margin-top: 20px;
 }
+
+/* Styling for the main menu links */
 .mainmenu a {
     color: white;
     text-decoration: none;
@@ -230,10 +229,10 @@ header {
     font-size: 1.8rem;
 }
 
+/* Hover effect on the main menu links */
 .mainmenu a:hover {
     transform: scale(1.2);
 }
-
 
 /* Styling for the footer */
 .footer-wrapper {
@@ -245,6 +244,7 @@ header {
 
 }
 
+/* Styling for the footer */
 footer {
     position: absolute;
     bottom: 0;
@@ -257,24 +257,26 @@ footer {
     box-shadow: 0px -10px 15px -5px rgba(0, 0, 0, 0.5);
 }
 
+/* Styling for the footer links */
 .footerlinks {
     display: grid;
     padding: 20px;
 }
 
-/* Styling for the footer */
+/* Styling for the footer link */
 .footerlinks a {
     color: lightgray;
     text-decoration: none;
 }
 
+/* Styling for th */
 th{
     color: orangered;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-
+/* Styling for exercise menu */
 .exercisemenu ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -286,25 +288,27 @@ th{
     color: orangered;
     margin-top: 40px;
 }
+
+/* Styling for exercise menu */
 .exercisemenu li {
     padding: 10px 0;  
 }
-
+/* Styling for exercise menu videos */
 .exercisemenu iframe {
     width: 150%;
     height: 150%;
     border: none;
     box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.7);
 }
-
+/* Styling for the next and previous buttons */
 #prevButton, #nextButton {
     width: 50px; 
     height: 50px; 
     margin-top: 10px;
     position: relative;
     left: 50%;
-  }
-  /* Styling for the next and previous buttons */
+}
+/* Styling for the previous button */
   #prevButton{
     color: #333;
     padding: 16px;
@@ -314,8 +318,8 @@ th{
     text-align: center;
     border: none;
     left: -50px;
-  }
-  /* Styling for the next and previous buttons */
+}
+/* Styling for the next button */
   #nextButton{
     color: #333;
     padding: 16px;
@@ -325,13 +329,13 @@ th{
     text-align: center;
     border: none;
     right: 50px;
-  }
-  
+}
+/* Styling for the button container */
 #buttonContainer {
     display: flex;
     justify-content: center;
 }  
-
+/* Styling for #exercise */
 #exercises{
     color: orangered;
     font-size: 2.5rem;
@@ -339,7 +343,7 @@ th{
     text-align: center;
     margin-top: 5%;
 }
-
+/* Styling for the scrollable content window*/
 .scrollablecontent{
     display: flex;
     align-items: center;
@@ -347,6 +351,7 @@ th{
     height: 100%;
     flex: 1;
 }
+/* Styling for #Splite*/
 #Splits{
     color: orangered;
     font-size: 2.5rem;
@@ -354,12 +359,7 @@ th{
     text-align: center;
     margin-top: 5%;
 }
-
-h2{
-    color: orangered;
-    
-  }
-  /*Styling for p */
+/*Styling for p */
 .scrollablecontent p {
     position: relative;
     font-size: x-large;
@@ -368,14 +368,14 @@ h2{
     margin-right: 50px;
     text-align: left;
 }
-
+/* Styling for YTLink*/
 .YTLink{
     text-decoration: none;
     color: orangered;
     font-style: italic;
     font-weight: bold;
 }
-
+/* Styling for #Nutrition*/
 #Nutrition{
     color: orangered;
     font-size: 2.5rem;
@@ -383,7 +383,7 @@ h2{
     text-align: center;
     margin-top: 5%;
 }
-
+/* Styling for #contact*/
 #contact{
     color: orangered;
     font-size: xxx-large;
@@ -392,17 +392,20 @@ h2{
     margin-top: 5%;
     border-bottom: lightgray 1px solid;
 }
+/* Styling for h2 */
 h2{
     color: orangered;
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
 }
+/* Styling for the contact page background */
 .ContactPageBackground{
     background-color: whitesmoke;
     width: 100%;
     height: 20vh;
 }
+/* Styling for the contact page */
 .contactpage {
     width: 50%;
     height: 40vh;
@@ -416,23 +419,23 @@ h2{
     display: block;
     text-align: center;
     box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.7);
-  }
-
-
+}
+/* Styling for icons */
 i{
     font-size: xx-large;
     margin-right: 10px;
 }
-
+/* Styling for stong */
 strong{
     color: orangered;
 }
+/* Styling for .Mail */
 .Mail {
     color: black;
     text-decoration: none;
     font-size: xx-large;
 }
-
+/* Styling for .Phone */
 .Phone {
     color: black;
     text-decoration: none;
