@@ -3,36 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>All Things Gym</title>
 </head>
 <body>
   <header id="header">
-    <div class="menu">
-      <button class="menubtn"><i class="fas fa-bars fa-2x"></i>
-      </button>
-      <div id="sidenav" class="sidenav">
+    <nav>
+        <div class="menubigscreen">
+            <a href="./index.html">Home</a>
+            <a href="./exercises.html">Exercises</a>
+            <a href="./trainingsplits.html">Training Splits</a>
+            <a href="./nutrition.html">Nutrition</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="menusmallscreen">
+    <button class="menubtn"><i class="fas fa-bars fa-2x"></i>
+    </button>
+    <div id="sidenav" class="sidenav">
         <div class="exersizes">
-          <a href=./exercises.html>Exercises</a>
+        <a href=./exercises.html>Exercises</a>
         </div>
         <div class="trainingstyles">
-          <a href="./trainingsplits.html">Training Splits</a>
+        <a href="./trainingsplits.html">Training Splits</a>
         </div>
         <div class="nutrition">
-          <a href="nutrition.html">Nutrition</a>
+        <a href="nutrition.html">Nutrition</a>
         </div>
         <div class="contact">
             <a href="./contact.html">Contact</a>
         </div>
-      </div>
+    </div>
     </div>
     <div class="home-wrapper">
-      <a href="index.html">
-        <button class="home"><i class="fas fa-dumbbell fa-2x"></i></button>
-      </a>
+        <a href="index.html">
+            <button class="home"><i class="fas fa-dumbbell fa-2x"></i></button>
+        </a>
     </div>
   </header>
+      <div class="ContactBackground">
+      <div class="contactpage">
+        <h1 id="contact">Contact</h1>
+        <h2>Get in Touch</h2> 
+        <ul>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a class="Mail">Mail: allthingsgym@gmail.com</a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a class="Phone">Phone Number: +5555555555</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footerlinks">
+          <table>
+              <tr>
+                <th>Quick Links:</th>
+                <th>Socials:</th>
+              </tr>
+              <tr>
+                <td><a href="./exercises.html">Exercises</a></td>
+                <td><a href="https://www.instagram.com">Instagram</a></td>
+              </tr>
+              <tr>
+                <td><a href="./trainingsplits.html">Training Splits</a></td>
+                <td><a href="https://www.facebook.com">Facebook</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./nutrition.html">Nutrition</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./contact.html">Contact</a></td>
+              </tr>
+            </table>
+      </div>
+    </footer>
+  </div>
   <script src="./script.js"></script>
 </body>
 </html>
