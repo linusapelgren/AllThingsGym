@@ -1,110 +1,132 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Title <a name="title"></a>
+### All Things Gym
+#### Boardgames for the Newly Converted
+<a href="https://linusapelgren.github.io/AllThingsGym/index.html" target="_blank">All Things Gym Github pages link</a>
 
-Welcome USER_NAME,
+## Table of contents <a name="toc"></a>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- [Title](#title)
+- [Introduction](#intro)
+- [Design Planes](#planes)
+- [Features](#features)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits and Outside Sources](#credits)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Introduction <a name="introduction"></a>
 
-## Gitpod Reminders
+### Project Description
+This is a website that intends to be a hub of information for anyone who is looking to deepen their knowledge about anything training related
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Project Purpose
+It intends to teach people everything they need to know to take their training to new heights
 
-`python3 -m http.server`
+### User Demographics
+The expected user is anyone with an interest in streght training and bodybuilding, wheter they are new or already have experience with training
 
-A blue button should appear to click: _Make Public_,
+### Initial Design
+After i had decided what website i wanted to make, i imediately started experimenting with designing the website
+Here is the initial GitHub repository and GitHub Pages link
+<a href="https://github.com/linusapelgren/Portfolio-project-1-scrapped-" target="_blank">GitHub Repository</a>
+<a href="https://linusapelgren.github.io/Portfolio-project-1-scrapped-/" target="_blank">GitHub Pages</a>
+- At first i wanted to make a separate page for every muscle group but i instead opted to having each muscle group listed on the same page to make it easier for the user to find
+- I first i designed the contentpage to look like a piece of paper but i changed it to have a more typical look
+-I originally just hade a hamburger menu but i changed it to a navigation bar depending on the screen size
 
-Another blue button should appear to click: _Open Browser_.
+#### Scrapping the first project
+After i decided to change the look of the page entirely i decided it would be better to scrap the project and start fresh so i made a new repository.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### Laying the groundwork
+The first thing i did when starting the new projext was to lay the groundwork for the three pages i knew i wanted, the home page, exercise page and contact page.
+I decided to keep some of the designs i made on the first project and improve upon them.
 
-A blue button should appear to click: _Make Public_,
+#### Home page
+Then i moved on to designing the home page.
 
-Another blue button should appear to click: _Open Browser_.
+#### Content pages
+I then started designing each of the pages that would contain the contents of the site.
+There are 3 pages of content. They all contain information about different parts of training. One is for deifferent exercises, one is for nutrition and one is for different training styles
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Contactpage
+The contact page has a phone number and an email adress. There are also icons displayed beside the contact information. I kept the paper design from the last website on this page
+![Contact page](/assets/screenshots/Contact.png)
 
-To log into the Heroku toolbelt CLI:
+### Future plans
+The site does not provide any written examples of exercises, so that would be one thing i would like to add.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+[return to Table of Contents](#toc)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Features <a name="features"></a>
+#### Navigation bar
+There is a navbar at the top of the page. For screens of width less than 768px, the navbar is hidden. 
+![Hamburger menu hidden](/assets/screenshots/HamburgerMenu.PNG)
 
-------
+Clicking on the hamburger icon will toggle the sidenav, which expands from the left side.
+![Hamburger menu expanded](/assets/screenshots/HamburgerMenuExpanded.PNG)
 
-## Release History
+On larger screens it is displayed beneath the homebutton. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Navigation Bar](/assets/screenshots/NavigationBar.PNG)
 
-**September 20 2023:** Update Python version to 3.9.17.
+#### Footer
+The footer contains a menu for all the different pages on the site and also links to social media sites. These only go to the main page of the respective social media site. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![The footer](assets/screenshots/footer)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### Features left to implement
+- A written description of different exercises
+- A page for links to external resources
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+[return to Table of Contents](#toc)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing <a name="testing"></a>
+### Manual Testing
+I hosted a live server from my VSCode to test the changes i made, this made it possible to open a tab in my browser and immediatly see the changes i made
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Validation
+The html files were validated using <a href="https://validator.w3.org/" target="_blank">W3html validator</a>. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+The CSS file was validated using <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3 Jigsaw CSS validator</a>. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+[return to Table of Contents](#toc)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Deployment <a name="deployment"></a>
+To deploy and view the project do the following steps.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+1. Copy/Clone the <a href="https://github.com/linusapelgren/AllThingsGym.git" target="_blank">repository</a> on github.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+2. Go to your copy of the repository on your github page (likely `https://github.com/YOUR-USERNAME-HERE/pp1-boardgames`)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+3. Open settings tab on top right of page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+4. Click on pages link on the left sidebar in the "Code and Automation" section.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+5. Set "Source" to "Deploy from branch", select "main" branch, and set folder to /(root) under "Build and Deployment". Then click Save.
 
-------
+6. Return to the "Code" tab and wait for site to build. Try doing a hard refresh.
 
-## FAQ about the uptime script
+7. On the right hand side under "Deployments", click on "github-pages".
 
-**Why have you added this script?**
+8. Click on the link which matches `https://USERNAME.github.io/REPO-NAME/` to view the deployed site.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+[return to Table of Contents](#toc)
 
-**How will this affect me?**
+## Credits and external resources <a name="credits"></a>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+#### Images
+Images:
+1. <a href="https://prod-ne-cdn-media.puregym.com/media/819394/gym-workout-plan-for-gaining-muscle_header.jpg?quality=80&mode=pad&width=992" target="_blank">A man working out using a dumbell</a>
+2. <a href="https://www.heartandstroke.ca/-/media/images/get-healthy/eat-variety-healthy-foods-image.jpg" target="_blank">Picture of a plate of food</a>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Links to videos used
+- <a href="https://www.youtube.com/watch?v=H6mRkx1x77k" target="_blank">The Ultimate Science-Based Leg Day For Muscle Growth (2023)</a>
+- <a href="https://www.youtube.com/watch?v=21lYP86dHW4&t=193s" target="_blank">Top 3 Shoulder Exercises For 3D Delts</a>
+- <a href="https://www.youtube.com/watch?v=jLvqKgW-_G8" target="_blank">I Ranked Every Back Exercise (Best To Worst)</a>
+- <a href="https://www.youtube.com/watch?v=fGm-ef-4PVk" target="_blank">I Ranked Every CHEST Exercise (Best To Worst)</a>
+- <a href="https://www.youtube.com/watch?v=Tn-XvYG9x7w&t=81s" target="_blank">How To Get Abs By Summer (Running Out Of Time!)</a>
+- <a href="https://www.youtube.com/watch?v=MfMxT_jXcPE" target="_blank">How To Build Huge Forearms: Optimal Training Explained (5 Best Exercises!)</a>
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+[return to Table of Contents](#toc)

@@ -185,9 +185,9 @@ header {
 .websitetitle h1{
     font-size: 2.5rem;
     color: white;
-    background: invisible;
+    background-color: transparent;
     font-family: barlow, sans-serif;
-    font-weight: 500%;
+    font-weight: 500;
 }
 
 /* Styling for websiteinfo */
@@ -197,7 +197,7 @@ header {
     margin: 40px;
     color: white;
     text-align: center;
-    background: invisible;
+    background-color: transparent;
 }
 
 /* Styling for the websitecontent */
@@ -277,28 +277,24 @@ th{
 }
 
 /* Styling for exercise menu */
-.exercisemenu ul {
+.exercisemenu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 350px;
-    padding: 20px;
+    gap: 200px;
     list-style-type: none;
     font-size: 40px;
     font-weight: bold;
     color: orangered;
-    margin-top: 40px;
 }
 
-/* Styling for exercise menu */
-.exercisemenu li {
-    padding: 10px 0;  
-}
 /* Styling for exercise menu videos */
-.exercisemenu iframe {
+iframe {
     width: 150%;
     height: 150%;
     border: none;
     box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: -200px;
 }
 /* Styling for the next and previous buttons */
 #prevButton, #nextButton {
@@ -306,7 +302,8 @@ th{
     height: 50px; 
     margin-top: 10px;
     position: relative;
-    left: 50%;
+    left: 70%;
+    top: -300px;
 }
 /* Styling for the previous button */
   #prevButton{
