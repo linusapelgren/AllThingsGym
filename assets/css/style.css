@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: whitesmoke;
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
@@ -331,7 +330,7 @@ iframe {
 #buttonContainer {
     display: flex;
     justify-content: center;
-}  
+} 
 /* Styling for #exercise */
 #exercises{
     color: orangered;
@@ -343,15 +342,23 @@ iframe {
 /* Styling for the scrollable content window*/
 .scrollablecontent{
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     height: 100%;
     flex: 1;
 }
+
+#food{
+    height: 50%;
+    width:50%;
+    margin: 0 34%;
+}
+
+
 /* Styling for #Splite*/
 #Splits{
     color: orangered;
-    font-size: 2.5rem;
+    font-size: xxx-large;
     font-weight: bold;
     text-align: center;
     margin-top: 5%;
@@ -371,11 +378,12 @@ iframe {
     color: orangered;
     font-style: italic;
     font-weight: bold;
+    margin: 50px;
 }
 /* Styling for #Nutrition*/
 #Nutrition{
     color: orangered;
-    font-size: 2.5rem;
+    font-size: xxx-large;
     font-weight: bold;
     text-align: center;
     margin-top: 5%;
@@ -438,4 +446,4 @@ strong{
     text-decoration: none;
     font-size: xx-large;
 }
-  
+
