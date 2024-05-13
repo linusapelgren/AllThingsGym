@@ -49,7 +49,7 @@ There are 3 pages of content. They all contain information about different parts
 
 #### Contactpage
 The contact page has a phone number and an email adress. There are also icons displayed beside the contact information. I kept the paper design from the last website on this page
-![Contact page](/assets/screenshots/Contact.png)
+![Contact page](/assets/screenshots/contact.png)
 
 ### Future plans
 The site does not provide any written examples of exercises, so that would be one thing i would like to add.
@@ -59,14 +59,14 @@ The site does not provide any written examples of exercises, so that would be on
 ## Features <a name="features"></a>
 #### Navigation bar
 There is a navbar at the top of the page. For screens of width less than 768px, the navbar is hidden. 
-![Hamburger menu hidden](/assets/screenshots/HamburgerMenu.PNG)
+![Hamburger menu hidden](/assets/screenshots/hamburgermenu.png)
 
 Clicking on the hamburger icon will toggle the sidenav, which expands from the left side.
-![Hamburger menu expanded](/assets/screenshots/HamburgerMenuExpanded.PNG)
+![Hamburger menu expanded](/assets/screenshots/hamburgermenuexpanded.png)
 
 On larger screens it is displayed beneath the homebutton. 
 
-![Navigation Bar](/assets/screenshots/NavigationBar.PNG)
+![Navigation Bar](/assets/screenshots/navigationbar.png)
 
 #### Footer
 The footer contains a menu for all the different pages on the site and also links to social media sites. These only go to the main page of the respective social media site. 
@@ -96,7 +96,7 @@ To deploy and view the project do the following steps.
 
 1. Copy/Clone the <a href="https://github.com/linusapelgren/AllThingsGym.git" target="_blank">repository</a> on github.
 
-2. Go to your copy of the repository on your github page (likely `https://github.com/YOUR-USERNAME-HERE/pp1-boardgames`)
+2. Go to your copy of the repository on your github page (likely `https://github.com/YOUR-USERNAME-HERE/AllThingsGym.git`)
 
 3. Open settings tab on top right of page
 
