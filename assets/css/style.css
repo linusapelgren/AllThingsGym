@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: whitesmoke;
 }
   
 /* Styling for the header */
@@ -170,62 +171,51 @@ header {
 
 /* Styling for the website title */
 .websitetitle{
-    background-color: #333;
     margin-top: 40px;
     margin-bottom: 80px;
     width: 70%;
     border-radius: 5%;
     text-align: center;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Styling for h1 */
 .websitetitle h1{
     font-size: 2.5rem;
-    color: white;
-    background-color: transparent;
+    color: orangered;
     font-family: barlow, sans-serif;
     font-weight: 500;
+    font-weight: bold;
 }
 
 /* Styling for websiteinfo */
 .websiteinfo{
-    font-size: 1.8rem;
-    color: black;
+    font-size: 2rem;
     margin: 40px;
-    color: white;
+    font-weight: bold;
+    color: orangered;
     text-align: center;
     background-color: transparent;
 }
 
-/* Styling for the websitecontent */
-.websitecontent{
-    background-color: #333;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
 /* Styling for the main menu */
 .mainmenu {
-    color: black;
     text-align: center;
-    background: #333; 
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
     margin-top: 20px;
 }
 
 /* Styling for the main menu links */
 .mainmenu a {
-    color: white;
+    color: orangered;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
     padding: 10px 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 /* Hover effect on the main menu links */
