@@ -15,11 +15,10 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    margin-bottom: 0px;
+    align-items: center;  
     box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.5);
     justify-content: center;
     position: relative;
@@ -76,30 +75,17 @@ header {
 .menusmallscreen {
     display: none;
 }
-/*Showing menu for small screen */
-@media (max-width: 768px) {
-    .menusmallscreen {
-        display: block;
-    }
-}
+
+
 /*Styling for the dropdown menu button */
 .menubtn {
     background-color: transparent;
-    padding: 16px;
     color: orangered;
     font-size: 20px;
-    border-radius: 10px;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 2rem;
-    width: 2rem;
     border: none;
     z-index: 100;
-    position: absolute;
     left: 0;
-    top: 35%;
     transition: transform 0.3s ease-in-out;
 }
 /*Hover effect on dropdown menu */
@@ -109,23 +95,22 @@ header {
 
 /*Styling for the sidenav*/
 .sidenav {
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 100%;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 62px;
     left: 0;
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 80px;
     margin-top: 0;
 }
 /*Styling for the sidenav links */
 .sidenav a{
     display: block;
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    padding: 8px 8px 8px ;
     font-size: 25px;
     color: black;
     transition: 0.3s;
@@ -136,11 +121,13 @@ header {
 .home {
     background-color: transparent;
     color: orangered;
-    padding: 16px;
     font-size: 20px;
     cursor: pointer;
     border: none;
     transition: transform 0.3s ease-in-out;
+    position: relative;
+    left: 33%;
+    
 }
 
 /* Hover effect on the Home button */
@@ -150,6 +137,7 @@ header {
 /* Styling for the Home button */
 .home-wrapper {
     margin: auto;
+    width: 100%;
 }
 
 /* Styling for the content */
@@ -158,15 +146,6 @@ header {
     align-items: center;
     flex-direction: column;
     height: 80vh;
-}
-
-/* Styling for the background image */
-.backgroundimg{
-    position: fixed;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
 }
 
 /* Styling for the website title */
@@ -236,7 +215,7 @@ header {
 }
 /* Styling for the footer */
 footer {
-    position: absolute; 
+    position: unset; 
     bottom: 0;
     width: 100%;
     background-color: #333;
@@ -257,7 +236,37 @@ footer {
     color: lightgray;
     text-decoration: none;
 }
+@media (max-width: 480px) {
+    /*Showing menu for small screen */
+    .menusmallscreen {
+        display: block;
+    }
+    footer{
+        position: fixed;
+    }
+    .websitetitle h1{
+        font-size: 2.25rem;
+        margin: 0;
+    }
+    .websiteinfo{
+        font-size: 1.75rem;
+        margin: 10px 10px;
+    }
+    .mainmenu {
+        width: 100%;
+    }
+    .mainmenu a {
+        font-size: 1.5rem;
+        padding: 5px 5px;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
+}
 /* Styling for th */
 th{
     color: orangered;
