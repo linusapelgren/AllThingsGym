@@ -7,7 +7,6 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-color: whitesmoke;
 }
   
@@ -22,6 +21,7 @@ header {
     box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.5);
     justify-content: center;
     position: relative;
+    width: 100%;
 }
 
 /* Styling menu for big screen */
@@ -125,8 +125,6 @@ header {
     cursor: pointer;
     border: none;
     transition: transform 0.3s ease-in-out;
-    position: relative;
-    left: 33%;
     
 }
 
@@ -138,6 +136,7 @@ header {
 .home-wrapper {
     margin: auto;
     width: 100%;
+    text-align: center;
 }
 
 /* Styling for the content */
@@ -170,7 +169,7 @@ header {
 /* Styling for websiteinfo */
 .websiteinfo{
     font-size: 2rem;
-    margin: 40px;
+    margin: 20px;
     font-weight: bold;
     color: orangered;
     text-align: center;
@@ -203,19 +202,8 @@ header {
 }
 
 /* Styling for the footer */
-.footer-wrapper {
-    position: relative;
-    min-height: 20vh;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#contactwrapper{
-    min-height: 80vh;
-}
-/* Styling for the footer */
 footer {
-    position: unset; 
+    position: fixed; 
     bottom: 0;
     width: 100%;
     background-color: #333;
@@ -236,37 +224,7 @@ footer {
     color: lightgray;
     text-decoration: none;
 }
-@media (max-width: 480px) {
-    /*Showing menu for small screen */
-    .menusmallscreen {
-        display: block;
-    }
-    footer{
-        position: fixed;
-    }
-    .websitetitle h1{
-        font-size: 2.25rem;
-        margin: 0;
-    }
-    .websiteinfo{
-        font-size: 1.75rem;
-        margin: 10px 10px;
-    }
-    .mainmenu {
-        width: 100%;
-    }
-    .mainmenu a {
-        font-size: 1.5rem;
-        padding: 5px 5px;
-    }
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
-}
 /* Styling for th */
 th{
     color: orangered;
@@ -275,7 +233,7 @@ th{
 }
 
 /* Styling for exercise menu */
-.exercisemenu{
+.exercisemenubig{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 200px;
@@ -373,7 +331,7 @@ iframe {
     text-align: left;
 }
 /* Styling for YTLink*/
-.YTLink{
+.ytlink{
     text-decoration: none;
     color: orangered;
     font-style: italic;
@@ -404,26 +362,21 @@ h2{
     font-weight: bold;
     text-align: center;
 }
-/* Styling for the contact page background */
-.ContactPageBackground{
-    background-color: whitesmoke;
-    width: 100%;
-    height: 20vh;
-}
+
 /* Styling for the contact page */
 .contactpage {
-    width: 50%;
-    height: 40vh;
+    width: fit-content;
     background-color: whitesmoke;
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px;
     text-align: left;
-    margin: 12% auto;
+    margin: auto;
     overflow: hidden;
     box-sizing: border-box;
     display: block;
     text-align: center;
     box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.7);
+    transform: translateY(50%);
 }
 /* Styling for icons */
 i{
@@ -435,15 +388,108 @@ strong{
     color: orangered;
 }
 /* Styling for .Mail */
-.Mail {
+.mail {
     color: black;
     text-decoration: none;
     font-size: xx-large;
 }
 /* Styling for .Phone */
-.Phone {
+.phone {
     color: black;
     text-decoration: none;
     font-size: xx-large;
 }
-
+.exercisemenusmall{
+    display: none;
+    
+}
+#footer{
+    position: unset;
+    bottom: 0;
+}
+@media (max-width: 480px) {
+    /*Showing menu for small screen */
+    .menusmallscreen {
+        display: block;
+    }
+    /*Styling fot footer */
+    footer{
+        position: unset;
+        margin-top: 50px;
+    }
+    /*Styling for the .websitetitle h1*/
+    .websitetitle h1{
+        font-size: 2.25rem;
+        margin: 0;
+    }
+    /*Styling for websiteinfo */
+    .websiteinfo{
+        font-size: 1.75rem;
+        margin: 0px 10px;
+    }
+    /*Styling for the main menu */ 
+    .mainmenu {
+        width: 100%;
+    }
+    /*Styling for the main menu links */
+    .mainmenu a {
+        font-size: 1.5rem;
+        padding: 5px
+    }
+    /*Styling for the header*/
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Styling for .home*/
+    .home{
+        position: relative;
+        transform: translateX(-50%);
+    }
+    /*Styling for #contactfooter*/
+    #contactfooter{
+        position: fixed;
+    }
+    /*Styling for .exercisemenubig*/
+    .exercisemenubig{
+        display: none;
+    }
+    /*Styling for .exercisemenusmall*/
+    .exercisemenusmall{
+        display: block;
+    }
+    /*Styling for iframe*/
+    iframe{
+        height: 100%;
+        width: 100%;
+        position: unset;
+    }
+    /*Styling for scrollablecontent*/
+    .scrollablecontent{
+        text-align: center;
+    }   
+    /*Styling for scrollablecontent p*/
+    .scrollablecontent p {
+        margin: 10px 0;
+        text-align: center;
+    }
+    /*Styling for #food */
+    #food{
+        height: 50%;
+        width: 100%;
+        position: relative;
+        left: -15%;
+    }
+    /* Styling for the contact page*/
+    .contactpage {
+        width: 100%;
+        padding: 5px;
+        transform: translateY(20%);
+    }
+    /* Styling for .ytlink */
+    .ytlink{
+        text-align: center;
+    }
+}

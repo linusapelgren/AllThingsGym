@@ -46,7 +46,7 @@
   <div class="scrollablecontent" id="exercisecontent"> 
     <!--Content goes here-->
     <h1 id="exercises">Exercises</h1>
-    <div class="exercisemenu"> <!--Exercise video menu-->
+    <div class="exercisemenubig"> <!--Exercise video menu-->
       <h2>Chest exercises:</h2>
       <h2>Back exercises:</h2>
       <iframe src="https://www.youtube.com/embed/fGm-ef-4PVk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Chest exercise video-->
@@ -65,9 +65,27 @@
         <a id="nextButton"><i class="fas fa-arrow-right fa-2x"></i></a> <!--Next button-->
       </div>
     </div>  
+    <div class="exercisemenusmall"> <!--Exercise video menu-->
+      <h2>Chest exercises:</h2>
+      <iframe src="https://www.youtube.com/embed/fGm-ef-4PVk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Chest exercise video-->
+      <h2>Back exercises:</h2>
+      <iframe src="https://www.youtube.com/embed/jLvqKgW-_G8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Back exercise video-->
+      <h2>Leg exercises:</h2>
+      <iframe src="https://www.youtube.com/embed/H6mRkx1x77k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Leg exercise video-->
+      <h2>Shoulder exercises:</h2>
+      <iframe src="https://www.youtube.com/embed/21lYP86dHW4?start=193" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Shoulder exercise video-->
+      <h2>Core exercises:</h2>
+      <iframe src="https://www.youtube.com/embed/Tn-XvYG9x7w?start=81&end=244" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Core exercise video-->
+      <h2>Arm exercises:</h2>
+      <iframe id="videoPlayer" src="https://www.youtube.com/embed/MfMxT_jXcPE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Arm exercise video-->
+      <br>
+      <div id="buttonContainer">
+        <a id="prevButton"><i class="fas fa-arrow-left fa-2x"></i></a> <!--Previous button-->
+        <a id="nextButton"><i class="fas fa-arrow-right fa-2x"></i></a> <!--Next button-->
+      </div>
+    </div> 
   </div>
-  <div class="footer-wrapper"> <!--Footer wrapper to prevent footer from overlapping-->
-    <footer>
+    <footer id="footer">
       <div class="footerlinks"> <!--Table with links to other pages-->
           <table>
               <tr>
@@ -93,7 +111,6 @@
             </table>
       </div>
     </footer>
-  </div>
   <!--Script for changing video in video player-->
   <script> 
     var videos = [
