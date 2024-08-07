@@ -148,9 +148,9 @@ I hosted a live server from my VSCode to test the changes i made, i used this to
 
 ### Validator Testing
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Flinusapelgren.github.io%2FGestureGalaxy%2F)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Flinusapelgren.github.io%2FAllThingsGym%2Findex.html)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-linusapelgr-gesturegala-5xdeal090og.ws-eu110.gitpod.io%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flinusapelgren.github.io%2FAllThingsGym%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
 ### Lighthouse Tool
 - Some of the results aren't the best but in order to fix it i had to alter the look of the website, so I opted to not do that
