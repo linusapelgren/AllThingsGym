@@ -12,109 +12,110 @@
 - [Features](#features)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Credits](#credits)
+- [Credits](#credits-and-external-resources)
 
-## Introduction
+# Introduction
 
-### Project Description
+## Project Description
 This is a website that intends to be a hub of information for anyone who is looking to deepen their knowledge about anything training related
 
-### Project Purpose
+## Project Purpose
 It intends to teach people everything they need to know to take their training to new heights
 
-### User Demographics
+## User Demographics
 The expected user is anyone with an interest in strenght training and bodybuilding, wheter they are new or already have experience at the gym
 
-## Design
+# Design
 
-### Color Scheme 
+## Color Scheme 
 - When choosing a color scheme i looked at the different options in CSS and decided on one i think looked nice
 - The colors i choose were white, orangered, #333
 
-### Wireframes
+## Wireframes
 
-#### Desktop
+## Desktop
 
-##### Home page
+## Home page
 
 ![Home page](/assets/screenshots/wireframes/index.png)
 
-##### Excersize page
+## Excersize page
 
 ![Excersize page](/assets/screenshots/wireframes/exercises.png)
 
-##### Nutrition page
+## Nutrition page
 
 ![Nutrition page](/assets/screenshots/wireframes/nutrition.png)
 
-##### Contact page
+## Contact page
 
 ![Contact page](/assets/screenshots/wireframes/contact.png)
 
-#### Mobile
+## Mobile
 
-##### Home page
+## Home page
 
 ![Home page](/assets/screenshots/wireframes/indexmobile.png)
 
-##### Excersize page
+## Excersize page
 
 ![Excersize page](/assets/screenshots/wireframes/exercisesmobile.png)
 
-##### Nutrition page
+## Nutrition page
 
 ![Nutrition page](/assets/screenshots/wireframes/nutritionmobile.png)
 
-##### Contact page
+## Contact page
 
 ![Contact page](/assets/screenshots/wireframes/contactmobile.png)
 
-## Pages
+# Pages
 
-### Desktop
+## Desktop
 
-#### Home page
+## Home page
 
 ![Home page](/assets/screenshots/index.png)
 
-#### Excersize page
+## Excersize page
 
 ![Excersize page](/assets/screenshots/excersizes.png)
 
-#### Nutrition page
+## Nutrition page
 
 ![Nutrition page](/assets/screenshots/nutrition.png)
 
-#### Contact page
+## Contact page
 
 ![Contact page](/assets/screenshots/contact.png)
 
-### Mobile
+## Mobile
 
-#### Home page
+## Home page
 
 ![Home page](/assets/screenshots/indexmobile.png)
 
-#### Excersize page
+## Excersize page
 
 ![Excersize page](/assets/screenshots/excersizesmobile.png)
 
-#### Nutrition page
+## Nutrition page
 
 ![Nutrition page](/assets/screenshots/nutritionmobile.png)
 
-#### Contact page
+## Contact page
 
 ![Contact page](/assets/screenshots/contactmobile.png)
 
-### Future plans
-The site does not provide any written examples of exercises, so that would be one thing i would like to add.
+## Future plans
+
+- The site does not provide any written examples of exercises, so that would be one thing i would like to add.
 
 [return to Table of Contents](#table-of-contents)
 
-## Features 
+# Features 
 
-### Navigation bar
+## Navigation bar
 
 ![Navigation Bar](/assets/screenshots/navigationbar.png)
 
@@ -134,69 +135,70 @@ The site does not provide any written examples of exercises, so that would be on
 
 ![Hamburger menu expanded](/assets/screenshots/form.png)
 
-#### Footer
+## Footer
 The footer contains a menu for all the different pages on the site and also links to social media sites. These only go to the main page of the respective social media site. 
 
 ![The footer](assets/screenshots/footer.png)
 
 [return to Table of Contents](#table-of-contents)
 
-## Testing
+# Testing
 
-### Manual Testing
+## Manual Testing
 I hosted a live server from my VSCode to test the changes i made, i used this to make sure everything worked and looked as intended
 
-### Validator Testing
+## Validator Testing
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Flinusapelgren.github.io%2FAllThingsGym%2Findex.html)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flinusapelgren.github.io%2FAllThingsGym%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
-### Lighthouse Tool
+## Lighthouse Tool
 - Some of the results aren't the best but in order to fix it i had to alter the look of the website, so I opted to not do that
-### Desktop
 
-#### Home page
+## Desktop
+
+## Home page
 
 ![Home page](/assets/screenshots/indexlighthouse.png)
 
-#### Excersize page
+## Excersize page
 
 ![Excersize page](/assets/screenshots/exerciseslighthouse.png)
 
-#### Nutrition page
+## Nutrition page
 
 ![Nutrition page](/assets/screenshots/nutritionlighthouse.png)
 
-#### Contact page
+## Contact page
 
 ![Contact page](/assets/screenshots/contactlighthouse.png)
 
-### Mobile
+## Mobile
 
-#### Home page
+## Home page
 
 ![Home page](/assets/screenshots/indexlighthousemobile.png)
 
-#### Excersize page
+## Excersize page
 
 ![Excersize page](/assets/screenshots/exerciseslighthousemobile.png)
 
-#### Nutrition page
+## Nutrition page
 
 ![Nutrition page](/assets/screenshots/nutritionlighthousemobile.png)
 
-#### Contact page
+## Contact page
 
 ![Contact page](/assets/screenshots/contactlighthousemobile.png)
 
-### Future plans
+## Future plans
 The site does not provide any written examples of exercises, so that would be one thing i would like to add.
 
 [return to Table of Contents](#table-of-contents)
 
 
-## Deployment
+# Deployment
 To deploy and view the project do the following steps.
 
 1. Copy/Clone the <a href="https://github.com/linusapelgren/AllThingsGym.git" target="_blank">repository</a> on github.
@@ -217,16 +219,16 @@ To deploy and view the project do the following steps.
 
 [return to Table of Contents](#table-of-contents)
 
+# Credits and external resources
+
 ## Technologies used
 - [Balsamicq] Used for creating wireframes
 
-## Credits
-
-### Images
+## Images
 
 - <a href="https://www.heartandstroke.ca/-/media/images/get-healthy/eat-variety-healthy-foods-image.jpg" target="_blank">Picture of a plate of food</a>
 
-### Links to videos used
+## Links to videos used
 
 - <a href="https://www.youtube.com/watch?v=H6mRkx1x77k" target="_blank">The Ultimate Science-Based Leg Day For Muscle Growth (2023)</a>
 - <a href="https://www.youtube.com/watch?v=21lYP86dHW4&t=193s" target="_blank">Top 3 Shoulder Exercises For 3D Delts</a>
