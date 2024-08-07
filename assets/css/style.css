@@ -117,23 +117,15 @@ header {
     height: 80vh;
 }
 
-/* Styling for the website title */
-.websitetitle{
-    margin-top: 40px;
-    margin-bottom: 80px;
-    width: 70%;
-    border-radius: 5%;
-    text-align: center;
-    border-radius: 15px;
-}
-
 /* Styling for h1 */
-.websitetitle h1{
+h1{
     font-size: 2.5rem;
     color: orangered;
     font-family: barlow, sans-serif;
     font-weight: 500;
     font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
 }
 
 /* Styling for websiteinfo */
@@ -254,18 +246,10 @@ iframe {
     display: flex;
     justify-content: center;
 } 
-/* Styling for #exercise */
-#exercises{
-    color: orangered;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5%;
-}
+
 /* Styling for the scrollable content window*/
 .scrollablecontent{
     display: flex;
-    align-items: left;
     flex-direction: column;
     height: 100%;
     flex: 1;
@@ -278,15 +262,6 @@ iframe {
     margin: 0 34%;
 }
 
-
-/* Styling for #Splite*/
-#Splits{
-    color: orangered;
-    font-size: xxx-large;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5%;
-}
 /*Styling for p */
 .scrollablecontent p {
     position: relative;
@@ -296,6 +271,7 @@ iframe {
     margin-right: 50px;
     text-align: left;
 }
+
 /* Styling for YTLink*/
 .ytlink{
     text-decoration: none;
@@ -304,23 +280,8 @@ iframe {
     font-weight: bold;
     margin: 50px;
 }
-/* Styling for #Nutrition*/
-#Nutrition{
-    color: orangered;
-    font-size: xxx-large;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5%;
-}
-/* Styling for #contact*/
-#contact{
-    color: orangered;
-    font-size: xxx-large;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5%;
-    border-bottom: lightgray 1px solid;
-}
+
+
 /* Styling for h2 */
 h2{
     color: orangered;
