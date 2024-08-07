@@ -1,19 +1,19 @@
-# Title <a name="title"></a>
-### All Things Gym
-#### Boardgames for the Newly Converted
-<a href="https://linusapelgren.github.io/AllThingsGym/index.html" target="_blank">All Things Gym Github pages link</a>
+# All Things Gym
 
-## Table of contents <a name="toc"></a>
+![Amiresponsive](/assets/screenshots/amiresponsive.png)
 
-- [Title](#title)
-- [Introduction](#intro)
+<h2><a href="https://linusapelgren.github.io/AllThingsGym/index.html" target="_blank">Deployed site</a></h2>
+
+## Table of contents
+
+- [Introduction](#introduction)
 - [Design Planes](#planes)
 - [Features](#features)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits and Outside Sources](#credits)
 
-## Introduction <a name="introduction"></a>
+## Introduction
 
 ### Project Description
 This is a website that intends to be a hub of information for anyone who is looking to deepen their knowledge about anything training related
@@ -22,34 +22,51 @@ This is a website that intends to be a hub of information for anyone who is look
 It intends to teach people everything they need to know to take their training to new heights
 
 ### User Demographics
-The expected user is anyone with an interest in streght training and bodybuilding, wheter they are new or already have experience with training
+The expected user is anyone with an interest in strenght training and bodybuilding, wheter they are new or already have experience at the gym
 
 ### Initial Design
-After i had decided what website i wanted to make, i imediately started experimenting with designing the website
-Here is the initial GitHub repository and GitHub Pages link
-<a href="https://github.com/linusapelgren/Portfolio-project-1-scrapped-" target="_blank">GitHub Repository</a>
-<a href="https://linusapelgren.github.io/Portfolio-project-1-scrapped-/" target="_blank">GitHub Pages</a>
+- After i had decided what website i wanted to make, i imediately started experimenting with designing the website
 - At first i wanted to make a separate page for every muscle group but i instead opted to having each muscle group listed on the same page to make it easier for the user to find
 - I first i designed the contentpage to look like a piece of paper but i changed it to have a more typical look
--I originally just hade a hamburger menu but i changed it to a navigation bar depending on the screen size
+- I originally just hade a hamburger menu but i changed it to a navigation bar depending on the screen size
 
-#### Scrapping the first project
-After i decided to change the look of the page entirely i decided it would be better to scrap the project and start fresh so i made a new repository.
+## Pages
 
-#### Laying the groundwork
-The first thing i did when starting the new projext was to lay the groundwork for the three pages i knew i wanted, the home page, exercise page and contact page.
-I decided to keep some of the designs i made on the first project and improve upon them.
+### Desktop
 
 #### Home page
-Then i moved on to designing the home page.
 
-#### Content pages
-I then started designing each of the pages that would contain the contents of the site.
-There are 3 pages of content. They all contain information about different parts of training. One is for deifferent exercises, one is for nutrition and one is for different training styles
+![Home page](/assets/screenshots/index.png)
 
-#### Contactpage
-The contact page has a phone number and an email adress. There are also icons displayed beside the contact information. I kept the paper design from the last website on this page
+#### Excersize page
+
+![Excersize page](/assets/screenshots/excersizes.png)
+
+#### Nutrition page
+
+![Nutrition page](/assets/screenshots/nutrition.png)
+
+#### Contact page
+
 ![Contact page](/assets/screenshots/contact.png)
+
+### Mobile
+
+#### Home page
+
+![Home page](/assets/screenshots/indexmobile.png)
+
+#### Excersize page
+
+![Excersize page](/assets/screenshots/excersizesmobile.png)
+
+#### Nutrition page
+
+![Nutrition page](/assets/screenshots/nutritionmobile.png)
+
+#### Contact page
+
+![Contact page](/assets/screenshots/contactmobile.png)
 
 ### Future plans
 The site does not provide any written examples of exercises, so that would be one thing i would like to add.
@@ -57,37 +74,44 @@ The site does not provide any written examples of exercises, so that would be on
 [return to Table of Contents](#toc)
 
 ## Features <a name="features"></a>
-#### Navigation bar
-There is a navbar at the top of the page. For screens of width less than 768px, the navbar is hidden. 
-![Hamburger menu hidden](/assets/screenshots/hamburgermenu.png)
 
-Clicking on the hamburger icon will toggle the sidenav, which expands from the left side.
-![Hamburger menu expanded](/assets/screenshots/hamburgermenuexpanded.png)
-
-On larger screens it is displayed beneath the homebutton. 
+### Navigation bar
 
 ![Navigation Bar](/assets/screenshots/navigationbar.png)
+
+![Navigation Bar Small](/assets/screenshots/navbarsmall.png)
+
+## Hamburger menu
+
+![Hamburger menu hidden](/assets/screenshots/hamburgermenu.png)
+
+![Hamburger menu expanded](/assets/screenshots/hamburgermenuexpanded.png)
+
+## Video selector
+
+![Hamburger menu expanded](/assets/screenshots/selector.png)
+
+## Contact form
+
+![Hamburger menu expanded](/assets/screenshots/form.png)
 
 #### Footer
 The footer contains a menu for all the different pages on the site and also links to social media sites. These only go to the main page of the respective social media site. 
 
-![The footer](assets/screenshots/footer)
-
-
-#### Features left to implement
-- A written description of different exercises
-- A page for links to external resources
+![The footer](assets/screenshots/footer.png)
 
 [return to Table of Contents](#toc)
 
-## Testing <a name="testing"></a>
+## Testing
+
 ### Manual Testing
 I hosted a live server from my VSCode to test the changes i made, this made it possible to open a tab in my browser and immediatly see the changes i made
 
 ### Validation
-The html files were validated using <a href="https://validator.w3.org/" target="_blank">W3html validator</a>. 
-
-The CSS file was validated using <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3 Jigsaw CSS validator</a>. 
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Flinusapelgren.github.io%2FGestureGalaxy%2F)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-linusapelgr-gesturegala-5xdeal090og.ws-eu110.gitpod.io%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
 [return to Table of Contents](#toc)
 

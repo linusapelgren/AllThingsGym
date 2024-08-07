@@ -99,14 +99,14 @@ header {
     font-size: 20px;
     cursor: pointer;
     border: none;
-    
 }
 
 /* Styling for the Home button */
 .home-wrapper {
     margin: auto;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* Styling for the content */
@@ -185,7 +185,8 @@ footer {
 
 /* Styling for the footer links */
 .footerlinks {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
 }
 
@@ -212,7 +213,9 @@ th{
     font-weight: bold;
     color: orangered;
 }
-
+.exercisemenubig h2{
+    margin-top: 100px;
+}
 /* Styling for exercise menu videos */
 iframe {    
     height: 400%;
@@ -448,7 +451,6 @@ strong{
     /* Styling for the contact page*/
     .contactpage {
         width: 100%;
-        padding: 5px;
         transform: translateY(20%);
     }
     /* Styling for .ytlink */
