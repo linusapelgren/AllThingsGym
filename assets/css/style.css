@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: white;
 }
   
 /* Styling for the header */
@@ -47,29 +47,9 @@ header {
     font-weight: bold;
     cursor: pointer;
     position: relative;
-    transition: transform 0.3s ease-in-out;
     text-decoration: none;
 }
 
-/*Styling menu for big screen */
-.menubigscreen a:hover {
-    transform: scale(1.2);
-}
-
-/*Styling menu child 1 */
-.menubigscreen a:nth-child(1):hover {
-    transform: scale(1.2);
-}
-
-/*Styling menu child 2 */
-.menubigscreen a:nth-child(2):hover {
-    transform: scale(1.2);
-}
-
-/*Styling menu child 3 */
-.menubigscreen a:nth-child(3):hover {
-    transform: scale(1.2);
-}
 
 /*Hiding menu for small screen */
 .menusmallscreen {
@@ -86,11 +66,6 @@ header {
     border: none;
     z-index: 100;
     left: 0;
-    transition: transform 0.3s ease-in-out;
-}
-/*Hover effect on dropdown menu */
-.menubtn:hover{
-    transform: scale(1.2);
 }
 
 /*Styling for the sidenav*/
@@ -124,14 +99,9 @@ header {
     font-size: 20px;
     cursor: pointer;
     border: none;
-    transition: transform 0.3s ease-in-out;
     
 }
 
-/* Hover effect on the Home button */
-.home:hover{
-    transform: scale(1.2);
-}
 /* Styling for the Home button */
 .home-wrapper {
     margin: auto;
@@ -245,7 +215,7 @@ th{
 
 /* Styling for exercise menu videos */
 iframe {    
-    height: 300%;
+    height: 400%;
     width: 100%;
     border: none;
     box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.7);
@@ -256,17 +226,12 @@ iframe {
 #prevButton, #nextButton {
     width: 50px; 
     height: 50px; 
-    margin-top: 10px;
-    position: relative;
-    left: 70%;
-    top: -300px;
+    margin-top: 70px;
 }
 /* Styling for the previous button */
   #prevButton{
     color: #333;
-    padding: 16px;
     font-size: 16px;
-    border-radius: 10px;
     cursor: pointer;
     text-align: center;
     border: none;
@@ -275,9 +240,7 @@ iframe {
 /* Styling for the next button */
   #nextButton{
     color: #333;
-    padding: 16px;
     font-size: 16px;
-    border-radius: 10px;
     cursor: pointer;
     text-align: center;
     border: none;
@@ -401,11 +364,11 @@ strong{
 }
 .exercisemenusmall{
     display: none;
-    
 }
 #footer{
     position: unset;
     bottom: 0;
+    margin-top: 200px;
 }
 @media (max-width: 480px) {
     /*Showing menu for small screen */
@@ -461,8 +424,8 @@ strong{
         display: block;
     }
     /*Styling for iframe*/
-    iframe{
-        height: 100%;
+    .exercisemenusmall iframe{
+        height: 200px;
         width: 100%;
         position: unset;
     }

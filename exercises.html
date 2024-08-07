@@ -12,9 +12,8 @@
   <header id="header"> 
     <nav>
         <div class="menubigscreen"> <!--Menu that appeares on big screens-->
-            <a href="./index.html">Home</a>
             <a href="./exercises.html">Exercises</a>
-            <a href="./trainingsplits.html">Training Splits</a>
+            <a href="./trainingsplits.html">Splits</a>
             <a href="./nutrition.html">Nutrition</a>
             <a href="./contact.html">Contact</a>
         </div>
@@ -39,8 +38,7 @@
     </div>
     </div>
     <div class="home-wrapper">
-        <a href="index.html"></a> <!--Home button-->
-        <button class="home"><i class="fas fa-dumbbell fa-2x"></i></button> <!-- Dumbell icon for home button -->
+      <button class="home"><a href="index.html" style="color: orangered;"><i class="fas fa-dumbbell fa-2x"></i></a></button> <!-- Dumbell icon for home button -->
     </div>
   </header>
   <div class="scrollablecontent" id="exercisecontent"> 
@@ -76,13 +74,14 @@
       <iframe src="https://www.youtube.com/embed/21lYP86dHW4?start=193" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Shoulder exercise video-->
       <h2>Core exercises:</h2>
       <iframe src="https://www.youtube.com/embed/Tn-XvYG9x7w?start=81&end=244" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Core exercise video-->
-      <h2>Arm exercises:</h2>
+      <h2>Forearm exercises:</h2>
       <iframe id="videoPlayer" src="https://www.youtube.com/embed/MfMxT_jXcPE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Arm exercise video-->
       <br>
-      <div id="buttonContainer">
-        <a id="prevButton"><i class="fas fa-arrow-left fa-2x"></i></a> <!--Previous button-->
-        <a id="nextButton"><i class="fas fa-arrow-right fa-2x"></i></a> <!--Next button-->
-      </div>
+      <h2>Biceps exercises:</h2>
+      <iframe id="videoPlayer" src="https://www.youtube.com/embed/i1YgFZB6alI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Arm exercise video-->
+      <br>
+      <h2>Triceps exercises:</h2>
+      <iframe id="videoPlayer" src="https://www.youtube.com/embed/94DXwlcX8Po" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Arm exercise video-->
     </div> 
   </div>
     <footer id="footer">
@@ -122,16 +121,16 @@
   
     document.getElementById('nextButton').addEventListener('click', function(event) {
       event.preventDefault();
+      console.log('Next button clicked'); // Debugging line
       currentVideoIndex = (currentVideoIndex + 1) % videos.length;
       document.getElementById('videoPlayer').src = videos[currentVideoIndex].url;
-      document.getElementById('videoTitle').textContent = videos[currentVideoIndex].title;
     });
   
     document.getElementById('prevButton').addEventListener('click', function(event) {
       event.preventDefault();
+      console.log('Previous button clicked'); // Debugging line
       currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
       document.getElementById('videoPlayer').src = videos[currentVideoIndex].url;
-      document.getElementById('videoTitle').textContent = videos[currentVideoIndex].title;
     });
   </script>
   <script src="./script.js"></script> <!--JavaScript File -->
